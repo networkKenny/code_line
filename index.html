@@ -13,6 +13,9 @@
 			*{
 				font-family: 'Noto Sans TC', sans-serif;
 			}
+			/* body{
+				background-color: lightgray;
+			} */
 			.bg-special{
 				background-color: lightgray;
 			}
@@ -30,11 +33,18 @@
 				margin-top: 30px;
 				margin-bottom: 30px;
 			}
+			.now{
+				background-color: black;
+				color: white;
+			}
 		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 		  <div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="CODE_LINE.png" alt="" width="50px" height="50px">
+			</a>
 		    <a class="navbar-brand" href="#">CODE_LINE</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
@@ -45,17 +55,17 @@
 		          <a class="nav-link active" aria-current="page" href="#">主頁</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#">創辦人</a>
+		          <a class="nav-link" href="#start-peple">創辦人</a>
 		        </li>
 		        <li class="nav-item dropdown">
 		          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 		            群組
 		          </a>
 		          <ul class="dropdown-menu">
-		            <li><a class="dropdown-item" href="#">規則</a></li>
-		            <li><a class="dropdown-item" href="#">主旨</a></li>
+		            <li><a class="dropdown-item" href="#rules">規則</a></li>
+		            <li><a class="dropdown-item" href="#rules">主旨</a></li>
 		            <li><hr class="dropdown-divider"></li>
-		            <li><a class="dropdown-item" href="#">可以做的事</a></li>
+		            <li><a class="dropdown-item" href="#free-course">免費課程</a></li>
 		          </ul>
 		        </li>
 		      </ul>
@@ -101,38 +111,100 @@
 		  </button>
 		</div>
 		<div class="bg-special">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h1 class="py-5">
-						如何加入？
-					</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h1 class="py-5">
+							如何加入？
+						</h1>
+					</div>
+					<div class="col-md-8 py-5">
+						<p>
+							我們是基於line的群組，只要您擁有line帳號，即可點擊連結加入。<br>
+							這個群組適合什麼人？<br>
+							如果你對編程有興趣，不限年齡，都歡迎加入。我們希望組成一個龐大的編程社群，我們也有一個Youtube頻道，
+							歡迎任何人訂閱，這是免費的，你也可以隨時改變主意，我們不希望有系統化的規範去綁住我們的編程夢，所以規範
+							並不是很多，希望加入的人可以遵守，
+							只要點擊以下連結，即可加入：
+						</p>
+						<a href="https://www.youtube.com/channel/UC0z7N8yaLDLgkfY3ygYi3zA" target="_blank" class="btn btn-danger">Youtube Channel</a>
+						<a href="https://line.me/ti/g2/-lnuu8cM6K-7RCIxqq0__7AscUOkVu0UAtetZA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="btn btn-primary">加入</a>
+					</div>
 				</div>
-				<div class="col-md-8 py-5">
-					<p>
-						我們是基於line的群組，只要您擁有line帳號，即可點擊連結加入。<br>
-						這個群組適合什麼人？<br>
-						如果你對編程有興趣，不限年齡，都歡迎加入。我們希望組成一個龐大的編程社群，我們也有一個Youtube頻道，
-						歡迎任何人訂閱，這是免費的，你也可以隨時改變主意，我們不希望有系統化的規範去綁住我們的編程夢，所以規範
-						並不是很多，希望加入的人可以遵守，
-						只要點擊以下連結，即可加入：
-					</p>
-					<a href="https://www.youtube.com/channel/UC0z7N8yaLDLgkfY3ygYi3zA" target="_blank" class="btn btn-danger">Youtube Channel</a>
-					<a href="https://line.me/ti/g2/-lnuu8cM6K-7RCIxqq0__7AscUOkVu0UAtetZA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="btn btn-primary">加入</a>
+			</div>
+			<h1 style="text-align: center;" class="my-3" id="rules">群組規則及主旨</h1>
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-md-6">
+						<ul>
+							<li>不能進群後不講話</li>
+							<li>不能講禁語(髒話、煽情話、帶有政治立場的話)</li>
+							<li>不能批評、霸凌他人</li>
+							<li>不能嘲笑他人</li>
+							<li>不能讓他人感到不舒服</li>
+							<li>我們不歡迎不請自來的廣告(推銷)</li>
+						</ul>
+						<p>
+							我們的主旨是讓大家可以免費輕鬆學程式，不管是任何程式語言，我們都堅信「團結力量大」，只要大家齊聚
+							一堂，就可以互助互進，大家只要願意分享，我們就會進步！
+							胡宏曾說過一句意義深遠的話，魚生於水，死於水; 草木生於土，死於土; 人生於道，死於道。這段話讓我的心境提高了一個層次。了解清楚LINE群組到底是一種怎麼樣的存在，是解決一切問題的關鍵。
+							高爾基講過一段深奧的話，沒有太陽，花朵不會開放; 沒有愛便沒有幸福; 沒有婦女也就沒有愛，沒有母親，既不會有詩人，也不會有英雄。這把視野帶到了全新的高度。LINE群組，發生了會如何，不發生又會如何。我想，把LINE群組的意義想清楚，對各位來說並不是一件壞事。
+						</p>
+						<a href="https://line.me/ti/g2/-lnuu8cM6K-7RCIxqq0__7AscUOkVu0UAtetZA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" class="btn btn-danger">立刻加入！</a>
+					</div>
+					<div class="col-md-6">
+						<img src="bg-removed.png" alt="">
+					</div>
 				</div>
+				
+			</div>
+		</div>
+		
+		<div class="start-peple">
+		<div class="container mt-4" id="start-peple">
+			<div class="card">
+			  <h5 class="card-header">創辦人</h5>
+			  <div class="card-body">
+			    <h5 class="card-title">Kenny Huang</h5>
+			    <p class="card-text">於五年級時致力於程式開發，主要寫網頁，寫出不少好的作品。因自學程式的不便，因此突發奇想，創辦了新手也適合加入的LINE社群。</p>
+			  </div>
 			</div>
 		</div>
 		</div>
-		<h1 class="course-title">免費課程</h1>
+		<h1 class="course-title" id="free-course">免費課程</h1>
 		<div class="card web-crash-course mt-3" style="width: 500px;">
 		  <img src="網頁設計觀念速成班縮圖.png" class="card-img-top" alt="...">
 		  <div class="card-body">
 		    <h5 class="card-title">網頁設計觀念速成班-免費版</h5>
 		    <p class="card-text">這是免費的網頁設計觀念課，講觀念，不講語法。</p>
-		    <a href="crash_course.html" target="_blank" class="btn btn-primary">手刀報名去</a>
+		    <a href="crash_course.html" target="_blank" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">手刀報名去</a>
 		  </div>
 		</div>
-		<footer style="background-color: lightgray;" class="mt-3">
+		<div class="now my-4">
+			<div class="container">
+			<h1 class="py-4">就是現在！加入我們！</h1>
+			<a class="mb-4 btn btn-success" href="https://line.me/ti/g2/-lnuu8cM6K-7RCIxqq0__7AscUOkVu0UAtetZA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">立刻加入</a>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h1 class="modal-title fs-5" id="exampleModalLabel">敬請期待</h1>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        課程將在30天後推出
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確定</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		<footer style="background-color: lightgray;" class="mt-4">
 			<div class="container">
 				<p class="mb-0">@CODE_LINE 製作，但不擁有版權</p>
 			</div>
